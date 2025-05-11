@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <title>Pedidos Online</title>
+</head>
+<body>
+       <header>
+        <img class="logo" src="assets/2.png" alt="Logo">
+        <h1>Faça seu Pedido</h1>
+    </header>
+
+    <!-- Categoria pizzas -->
+
+        <div class="section" id="pizzas">
+        <h2>Pizzas</h2>
+        <div class="product">
+            <img src="assets/Pizza/Pizza Calabresa.png" alt="Pizza Margherita">
+            <div class="product-info">
+                <h3>Portuguesa</h3>
+                <p>R$ 30,00</p>
+            </div>
+            <button onclick="addToCart('Pizza Portuguesa', 30)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/Pizza/Pizza Calabresa.png" alt="Pizza Margherita">
+            <div class="product-info">
+                <h3>Calabresa</h3>
+                <p>R$ 30,00</p>
+            </div>
+            <button onclick="addToCart('Pizza Calabresa', 30)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/Pizza/Pizza Calabresa.png" alt="Pizza Margherita">
+            <div class="product-info">
+                <h3>Frango com Catupiry</h3>
+                <p>R$ 30,00</p>
+            </div>
+            <button onclick="addToCart('Pizza Frango com Catupiry', 30)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/Pizza/Pizza Calabresa.png" alt="Pizza Margherita">
+            <div class="product-info">
+                <h3>Quatro Queijos</h3>
+                <p>R$ 30,00</p>
+            </div>
+            <button onclick="addToCart('Pizza Quatro Queijos', 30)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <!-- categoria calzone-->
+
+        <div class="section" id="Calzone">
+        <h2>Calzones</h2>
+        <div class="product">
+            <img src="assets/Callzone/callzone.png" alt="Coca-Cola">
+            <div class="product-info">
+                <h3>Frango</h3>
+                <p>R$ 10,00</p>
+            </div>
+            <button onclick="addToCart('Calzone de Frango', 10)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+         <div class="product">
+            <img src="assets/Callzone/callzone.png" alt="Coca-Cola">
+            <div class="product-info">
+                <h3>Carne</h3>
+                <p>R$ 10,00</p>
+            </div>
+            <button onclick="addToCart('Calzone de Carne', 10)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+         <div class="product">
+            <img src="assets/Callzone/callzone.png" alt="Coca-Cola">
+            <div class="product-info">
+                <h3>Quatro Queijo</h3>
+                <p>R$ 10,00</p>
+            </div>
+            <button onclick="addToCart('Calzone de Quatro Queijos', 10)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+         <div class="product">
+            <img src="assets/Callzone/callzone.png" alt="Coca-Cola">
+            <div class="product-info">
+                <h3>Portuguesa</h3>
+                <p>R$ 10,00</p>
+            </div>
+            <button onclick="addToCart('Calzone de Portuguesa', 10)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <!-- categoria Pasteis-->
+
+        <div class="section" id="Pasteis">
+        <h2>Pasteis</h2>
+        <div class="product">
+            <img src="assets/Pastel/pastel.png" alt="Brownie">
+            <div class="product-info">
+                <h3>Carne</h3>
+                <p>R$ 15,00</p>
+            </div>
+            <button onclick="addToCart('Pastel de Carne', 15)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/Pastel/pastel.png" alt="Brownie">
+            <div class="product-info">
+                <h3>Frango</h3>
+                <p>R$ 15,00</p>
+            </div>
+            <button onclick="addToCart('Pastel de Frango', 15)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/Pastel/pastel.png" alt="Brownie">
+            <div class="product-info">
+                <h3>Carne Seca</h3>
+                <p>R$ 15,00</p>
+            </div>
+            <button onclick="addToCart('Pastel de Carne Seca', 15)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/Pastel/pastel.png" alt="Brownie">
+            <div class="product-info">
+                <h3>Pizza</h3>
+                <p>R$ 15,00</p>
+            </div>
+            <button onclick="addToCart('Pastel de Pizza', 15)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <!-- categoria bebidas-->
+
+        <div class="section" id="Bebidas">
+        <h2>Bebidas</h2>
+        <div class="product">
+            <img src="assets/Bebidas/Coca Cola.png" alt="Batata Frita">
+            <div class="product-info">
+                <h3>Coca-Cola 2L</h3>
+                <p>R$ 14,00</p>
+            </div>
+            <button onclick="addToCart('Coca-Cola 2L', 14)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/Bebidas/Guarana Antartica.png" alt="Batata Frita">
+            <div class="product-info">
+                <h3>Guarana Antartica 2L</h3>
+                <p>R$ 12,00</p>
+            </div>
+            <button onclick="addToCart('Guarana Antartica 2L', 12)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/Bebidas/Guarana Kuat.png" alt="Batata Frita">
+            <div class="product-info">
+                <h3>Kuat 2L</h3>
+                <p>R$ 10,00</p>
+            </div>
+            <button onclick="addToCart('Kuat 2L', 10)" class="botao-carrinho">Adicionar</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/Bebidas/Fanta Laranja.png" alt="Batata Frita">
+            <div class="product-info">
+                <h3>Fanta Laranja 2L</h3>
+                <p>R$ 12,00</p>
+            </div>
+            <button onclick="addToCart('Fanta Laranja 2L', 12)" class="botao-carrinho">Adicionar</button>
+        </div>
+        
+        <!-- Carrinnho-->
+
+        <div class="cart">
+             <span id="cart-summary">Carrinho vazio</span>
+              <button onclick="openCheckout()">Finalizar Pedido</button>
+        </div>
+
+        <div class="modal" id="checkout-modal">
+            <div class="modal-content">
+            <h3>Finalizar Pedido</h3>
+            <input type="text" id="name" placeholder="Seu Nome">
+            <input type="text" id="address" placeholder="Seu Endereço">
+            <select id="payment-method">
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Cartão">Cartão</option>
+            </select>
+            <button onclick="sendOrder()">Enviar Pedido</button>
+                <button onclick="closeCheckout()">Voltar</button>
+    </div>
+</body>
+</html>
